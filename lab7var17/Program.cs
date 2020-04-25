@@ -30,7 +30,7 @@ namespace lab7var17
 						
 						Console.WriteLine("");
 						Console.WriteLine("secur");
-					if (buf[i] == word[i]) { Console.WriteLine("secur sdfdsfsd"); }
+					//if (buf[i] == word[i]) { Console.WriteLine("secur sdfdsfsd"); }
 					}
 				}
 				sw.Close();

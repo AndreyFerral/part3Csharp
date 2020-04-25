@@ -65,7 +65,6 @@ namespace lab8var17 {
 
             public static string operator +(Tovar obj, Tovar obj1)
             {
-
                 int sum = obj.costTovar + obj1.costTovar;
                 return sum + " руб";
             }
