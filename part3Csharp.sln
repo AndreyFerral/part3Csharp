@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab7var17", "lab7var17\lab7var17.csproj", "{B3FDF128-B835-4A58-8C94-9009B193D582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab7var17", "lab7var17\lab7var17.csproj", "{B3FDF128-B835-4A58-8C94-9009B193D582}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab8var17", "lab8var17\lab8var17.csproj", "{5915E00E-4069-4191-B8F1-294711D26932}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab8var17", "lab8var17\lab8var17.csproj", "{5915E00E-4069-4191-B8F1-294711D26932}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab9var17", "lab9var17\lab9var17.csproj", "{C3C4033C-2C7E-44CB-912D-0BE0CA019797}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab9var17", "lab9var17\lab9var17.csproj", "{C3C4033C-2C7E-44CB-912D-0BE0CA019797}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -11,32 +11,34 @@ namespace lab7var17
     {
 		static void Main(string[] args)
 		{
-			try
+			string word, line;
+			Console.WriteLine("Введите слово для поиска: ");
+			word = Console.ReadLine();
+			StreamReader fin = new StreamReader("text.txt");
+			int count = 0;
+			while (!fin.EndOfStream)
 			{
-				StreamReader sw = new StreamReader("text.txt");
-				char[] buf = sw.ReadToEnd().ToCharArray();
-				string str = "that";
-				char[] word = str.ToCharArray();
-				bool first = true;
-				for (int i = 0, n = 0; i < buf.Length; ++i)
+				int index = 0;
+				line = fin.ReadLine();
+				Console.WriteLine(line);
+				while (true)
 				{
-					if (buf[i] == '.' || buf[i] == '!' || buf[i] == '?') {
-						for (int j = first ? n + 1 : n; j <= i; ++j) {
-							first = false;
-							Console.Write(buf[j]);
-							n = i + 1;
-							
-						}
-						
-						Console.WriteLine("");
-						Console.WriteLine("secur");
-					//if (buf[i] == word[i]) { Console.WriteLine("secur sdfdsfsd"); }
+					index = line.IndexOf(word, index);
+					if (index != -1)
+					{
+						if (!char.IsLetter(line, index-1) && !char.IsLetter(line, index+word.Length)) 
+						count++;
+						index++;
 					}
+					else {
+						break;
+					}
+					
 				}
-				sw.Close();
+				Console.WriteLine("Кол-во найденного слова:" + count + "\n");
+				count = 0;
 			}
-			catch (Exception ex) { Console.WriteLine(ex.Message); };
-			Console.ReadKey();
+			Console.ReadLine();
 		}
 	}
 
